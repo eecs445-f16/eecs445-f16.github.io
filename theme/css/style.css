@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #00274c;
+    border-color: #000d19;
+    min-height: 60px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-brand {
+    padding: 20px 15px;
+    color: #fff;
+}
+
+.content {
+    padding-top: 60px;
+    text-align: justify;
+}
+
+.navbar-right {
+    margin-right: 0;
+}
