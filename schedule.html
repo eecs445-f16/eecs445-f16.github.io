@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Metadata -->
+	<meta charset="utf-8">
+
+    <!-- Title -->
+	<title>EECS 445:  Introduction to Machine Learning</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Site Style -->
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="./">EECS&nbsp;445</a>
+	  </div>
+	  <div class="collapse navbar-collapse">
+	    <ul class="nav navbar-nav">
+		  	<li><a href="/schedule">Schedule</a></li>
+		  	<li><a href="/">Syllabus</a></li>
+	      <li><a href="https://piazza.com/class/issarttijnz3la">Piazza</a></li>
+	      <li><a href="https://umich.instructure.com/courses/86539">Canvas</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="https://www.cse.umich.edu/" style="padding:12px 0;"><img src="http://eecs445-f16.github.io/theme/images/m-logo.png" height="36" title="" style="padding-left:15px;"></a></li>
+	    </ul>
+	  </div>
+	</div>
+</div>
+
+<!-- Content -->
+<div class="container content">
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 1, Introduction to Machine Learning</b>, 2016-09-07 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 02, Linear Algebra Review</b>, 2016-09-12 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Basic matrix operations.  You should be able to interpret all of these geometrically AND write down generic formulas for each.<ul>
+<li>Vector addition, subtraction, and scaling.</li>
+<li>Matrix-vector multiplication, and interpretations in terms of the rows and columns of the matrix.</li>
+<li>Matrix-matrix multiplication, and interpretations.</li>
+<li>Dot products, including how they relate to projections and the angle between vectors.  More generally, inner products.</li>
+<li>Projection onto a vector or onto a subspace.</li>
+<li>Matrix transposes.  Transpose of products, transpose of sums.</li>
+</ul>
+</li>
+<li>Basic Matrix Properties<ul>
+<li>Understand the rank of a matrix both algebraically and geometrically.  What does it mean for a matrix to have full rank?</li>
+<li>Be able to describe the image and kernel of a matrix using set notation.</li>
+<li>Know all of the common equivalent conditions for a matrix to be invertible, in terms of the eigenvalues, the columns, the determinant, etc..</li>
+</ul>
+</li>
+<li>Vector spaces<ul>
+<li>Definition of an abstract vector space / subspace.</li>
+<li>Definition of linearly independent vectors</li>
+<li>Definition of basis, span, and dimension</li>
+<li>Orthogonality and orthogonal / orthonormal bases</li>
+<li>Know how to compute the coordinate vector for an element of an abstract vector space, with respect to a known basis.</li>
+<li>Gram-Schmidt orthogonalization</li>
+<li>Know what a linear transformation is.</li>
+</ul>
+</li>
+<li>Norms<ul>
+<li>Definition of a norm, and the properties that every norm must satisfy.</li>
+<li>Understand and interpret geometrically the 1-norm, 2-norm, and infinity-norms.  More generally, the p-norms.  </li>
+</ul>
+</li>
+<li>Special matrices.  Know the properties and common use cases for each.  For example, what can we say about the eigenvalues/eigenvectors for each special matrix below?  How do we multiply these matrices or take powers?  What can we say about the rank?<ul>
+<li>Symmetric / Hermitian matrices.  </li>
+<li>Orthogonal / unitary matrices</li>
+<li>Diagonal matrices</li>
+<li>Triangular matrix</li>
+<li>Positive-definite and positive-semidefinite matrices</li>
+</ul>
+</li>
+<li>Eigenvalues / eigenvectors<ul>
+<li>Geometric interpretation</li>
+<li>Matrix diagonalization.  Which matrices are diagonalizable and how can you tell?</li>
+<li>Spectral theorem</li>
+</ul>
+</li>
+<li>Singular value decomposition<ul>
+<li>Geometric interpretation (the image of the unit circle under every matrix is a hyperellipse)</li>
+<li>What does the SVD look like for the special matrices listed above?</li>
+<li>How can we interpret the singular values?</li>
+<li>How does the SVD relate to the rank of a matrix?</li>
+</ul>
+</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><a href="https://umich.instructure.com/courses/86539/files/folder/unsw-math2501-linear-algebra-notes">UNSW MATH 2501 Linear Algebra Notes</a> on Canvas.  These are very well-written with lots of examples.  You should be comfortable with the material from the first 7-8 chapters.</li>
+<li><strong>Book:</strong>  <a href="https://www.amazon.com/Linear-Algebra-Right-Undergraduate-Mathematics/dp/0387982582">"Linear Algebra Done Right"</a> by Sheldon Axler</li>
+<li><strong>Notes:</strong>  <a href="http://www.atmos.washington.edu/~dennis/MatrixCalculus.pdf">"Matrix Differentiation"</a> by RJ Barnes</li>
+<li><strong>CS229:</strong> <a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Linear Algebra Review and Reference</a></li>
+</ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 03, Probability Review & Intro to Optimization</b>, 2016-09-14 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Essential concepts in probability<ul>
+<li>You should be able to work with both discrete distributions AND continuous distributions.  Understand pdfs and cdfs.</li>
+<li>What is the difference between a random variable and a distribution?</li>
+<li>Independent random variables and events.</li>
+<li>Common distributions and their properties (mean, variance, etc.)<ul>
+<li>Bernoulli</li>
+<li>Binomial</li>
+<li>Multinomial</li>
+<li>Poisson</li>
+<li>Categorical</li>
+<li>Gaussian / Normal / Multivariate Normal</li>
+<li>Beta</li>
+<li>Dirichlet</li>
+</ul>
+</li>
+<li>Random vectors.  (Vectors whose elements are random variables)</li>
+<li>Expectation, variance, and covariance of random variables.</li>
+<li>Conditional expectation and variance.</li>
+<li>Functions of random variables (compute expectation of functions of random variables, etc.)</li>
+<li>Joint distributions.  Marginalization.  Marginal distributions.</li>
+<li>Bayes' theorem.</li>
+<li>Law of Total Probability</li>
+<li>You should be comfortable with conditional probability.</li>
+<li>Infinite sequences of random variables.</li>
+<li>Basic understanding of likelihood</li>
+</ul>
+</li>
+<li>Convex functions: definition and properties</li>
+<li>Constrained vs. unconstrained optimization</li>
+<li>Basic understanding of Lagrange duality</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><strong>CS229:</strong> <a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Review of Probability Theory</a></li>
+<li><strong>CS229:</strong> <a href="http://cs229.stanford.edu/section/cs229-cvxopt.pdf">Convex Optimization Overview</a></li>
+<li><strong>CS229:</strong> <a href="http://cs229.stanford.edu/section/cs229-cvxopt2.pdf">Convex Optimization Overview Part II</a></li>
+</ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 4. Linear Regression, Part I</b>, 2016-09-19 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Supervised learning regression problem</li>
+<li>Understand the assumptions made by the model of linear regression</li>
+<li>Understand the difference between input $x$ and features $\phi(x)$</li>
+<li>Intuitively understand the least squares objective function</li>
+<li>Use gradient descent to minimize the objective function<ul>
+<li>Use matrix algebra to compute the gradient of the objective</li>
+<li>Pros and cons of batch vs. stochastic gradient descent</li>
+</ul>
+</li>
+<li>Use the normal equations to find the least squares solution<ul>
+<li>Know how to derive the pseudoinverse</li>
+<li>Understand the normal equations geometrically</li>
+</ul>
+</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><strong>Murphy, §7.1-7.3:</strong> Linear Regression</li>
+<li><strong>Bishop, §1.1:</strong> Polynomial Curve Fitting Example</li>
+<li><strong>Bishop, §3.1:</strong> Linear Basis Function Models</li>
+<li><strong>CS229, Lecture Notes #1:</strong> <a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf">Part I, Linear Regression</a></li>
+</ul>
+<p>Advanced Reading:</p>
+<ul>
+<li><strong>Blog Post:</strong> Moritz Hardt, <a href="http://blog.mrtz.org/2013/09/07/the-zen-of-gradient-descent.html">"The Zen of Gradient Descent"</a></li>
+</ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 5. Linear Regression, Part II</b>, 2016-09-21 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Overfitting and the need for regularization<ul>
+<li>Write the objective function for lasso and ridge regression</li>
+<li>Use matrix calculus to find the gradient of the regularized objective</li>
+</ul>
+</li>
+<li>Understand the probabilistic interpretation of linear regression<ul>
+<li>MLE formulation of linear regression objective</li>
+<li>MAP formulation of regularized linear regression<ul>
+<li>Different priors correspond to different regularization</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Understand probabilistic modeling at a high level<ul>
+<li>Goals and assumptions of maximum likelihood estimation</li>
+<li>Goals and assumptions of MAP estimation</li>
+<li>Priors, likelihoods, and posteriors</li>
+</ul>
+</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><strong>Murphy, §7.5:</strong> Ridge Regression</li>
+</ul>
+<p>Advanced Reading, only if you're interested:
+<em> <strong>Murphy, §13.3:</strong> $\ell_1$ Regularization Basics
+</em> <strong>Murphy, §13.4:</strong> $\ell_1$ Regularization Algorithms</p>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 6. Logistic Regression</b>, 2016-09-26 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Undersand the supervised learning classification problem formulation</li>
+<li>Understand the probabilistic interpretation of logistic regression<ul>
+<li>Know why we use the sigmoid function rather than a hard threshold</li>
+<li>Write down the likelihood function</li>
+<li>Be able to take the gradient of the negative log-likelihood objective</li>
+</ul>
+</li>
+<li>Use Newton's method to find the maximum likelihood parameter estimate<ul>
+<li>Understand why Newton's method applies here</li>
+<li>Understand the difference between gradient descent and Newton's method</li>
+<li>Understand Newton's method geometrically for one-dimensional problems</li>
+</ul>
+</li>
+<li>Know that there is no closed-form solution for logistic regression</li>
+<li>Understand logistic regression as a linear classifier</li>
+<li>Know how logistic regression can be generalized to softmax regression for multiclass problems</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><strong>Murphy, §8.1-8.3</strong> Logistic Regression</li>
+<li><strong>Bishop, §4.2</strong>: Probabilistic Generative Models</li>
+<li><strong>Bishop, §4.3</strong>: Probabilistic Discriminative Models</li>
+<li><strong>CS229, Lecture Notes #1:</strong> <a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf">Part II, Classification &amp; Logistic Regression</a></li>
+<li><strong>CS229, Supplemental Notes #1:</strong> <a href="http://cs229.stanford.edu/extra-notes/loss-functions.pdf">Binary Classification &amp; Logistic Regression</a></li>
+</ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 7. Naive Bayes</b>, 2016-09-28 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Understand the difference between generative and discriminative classifiers<ul>
+<li>Know which models we've used belong to which category</li>
+</ul>
+</li>
+<li>Naive Bayes Classifiers<ul>
+<li>Understand the conditional independence assumption and implications</li>
+<li>Know how to write down the likelihood function</li>
+<li>Be able to compute MLE/MAP estimates by hand</li>
+<li>Understand Laplace smoothing and the problem it solves</li>
+</ul>
+</li>
+<li>Compare Logistic Regression and Naive Bayes</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><strong>Murphy, §3.1-3.4:</strong> Generative Models for Discrete Data</li>
+<li><strong>Murphy, §3.5:</strong> Naive Bayes Classifiers</li>
+<li><strong>Murphy, §8.6:</strong> Generative vs. Discriminative Classifiers</li>
+<li><strong>CS229, Lecture Notes #2:</strong> <a href="http://cs229.stanford.edu/notes/cs229-notes2.pdf">Part IV, Generative Learning Algorithms</a></li>
+</ul>
+<p>Advanced Reading, only if you're interested:</p>
+<ul>
+<li><strong>Paper:</strong> Ng &amp; Jordan 2001, <a href="http://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf">On Discriminative vs. Generative Classifiers:  A Comparison of Logistic Regression and Naive Bayes</a></li>
+<li><strong>Paper:</strong> Zhang, H., 2004. <a href="http://www.cs.unb.ca/~hzhang/publications/FLAIRS04ZhangH.pdf">"The optimality of naive Bayes"</a>. AA, 1(2), p.3.</li>
+<li><strong>Paper:</strong> Domingos, P. and Pazzani, M., 1997. <a href="http://link.springer.com/article/10.1023/A:1007413511361">"On the optimality of the simple Bayesian classifier under zero-one loss"</a>. Machine learning, 29(2-3), pp.103-130.</li>
+</ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 8. Support Vector Machines, Part I</b>, 2016-10-03 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Find a linear classifier</li>
+<li>Maximize the margin</li>
+<li>Get an optimization problem with constraints</li>
+<li>Variables have some semantics</li>
+<li>No corresponding probabilistic model</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><strong>Murphy, §14.5:</strong> Support Vector Machines</li>
+<li><strong>CS229, Lecture Notes #3:</strong> <a href="http://cs229.stanford.edu/notes/cs229-notes3.pdf">Part V, Support Vector Machines</a></li>
+</ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 9. Support Vector Machines, Part II</b>, 2016-10-05 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Optimal soft-margin hyperplane objective</li>
+</ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 10. Bias-Variance Tradeoff</b>, 2016-10-10 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Bias vs Variance</li>
+<li>Visualization of Bias vs Variance</li>
+<li>Model complexity</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><strong>Bishop, §3.2:</strong> The Bias-Variance Decomposition</li>
+</ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title"><b>Lecture 11, Decision Trees & Information Theory</b>, 2016-10-12 00:00:00-04:00</h1>
+    </div>
+    <div class="panel-body">
+        <p>Learning Objectives:</p>
+<ul>
+<li>Entropy and mutual information</li>
+</ul>
+<p>Helpful Resources:</p>
+<ul>
+<li><strong>Murphy, §2.8:</strong> Information Theory</li>
+<li><strong>Murphy, §16.1-16.2:</strong> Classification and Regression Trees</li>
+<li><strong>Bishop, §1.6:</strong> Information Theory</li>
+<li><strong>Blog Post:</strong> Aldo Cortesi, <a href="https://corte.si/posts/visualisation/entropy/index.html">"Visualizing Entropy in Binary Files"</a></li>
+</ul>
+    </div>
+</div>
+
+</div>
+
+<!-- Scripts -->
+
+</body>
+
+</html>

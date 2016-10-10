@@ -10,46 +10,43 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
+
     <!-- Site Style -->
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css">
-	
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.css" />
+
 </head>
 
 <body>
-	
+
 <!-- Navbar -->
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
-		<div class="navbar-header">
-	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	      		<span class="icon-bar"></span>
-	      		<span class="icon-bar"></span>
-	      		<span class="icon-bar"></span>
-	    	</button>
-	    	<a class="navbar-brand" href="https://eecs445-f16.github.io">EECS&nbsp;445</a>
-		</div>
-		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="https://eecs445-f16.github.io">Overview</a></li>
-				<!-- Site Pages -->
-				<li><a href="https://eecs445-f16.github.io/pages/assignments.html">
-					Assignments
-				</a></li>
-				<!---------------->
-				<li><a href="https://piazza.com/class/issarttijnz3la">Piazza</a></li>
-				<li><a href="https://umich.instructure.com/courses/86539">Canvas</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="https://www.cse.umich.edu/" style="padding:12px 0;"><img src="https://eecs445-f16.github.io/theme/images/m-logo.png" height="36" title="" style="padding-left:15px;"></a></li>
-			</ul>
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="./">EECS&nbsp;445</a>
+	  </div>
+	  <div class="collapse navbar-collapse">
+	    <ul class="nav navbar-nav">
+		  	<li><a href="/schedule">Schedule</a></li>
+		  	<li><a href="/">Syllabus</a></li>
+	      <li><a href="https://piazza.com/class/issarttijnz3la">Piazza</a></li>
+	      <li><a href="https://umich.instructure.com/courses/86539">Canvas</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="https://www.cse.umich.edu/" style="padding:12px 0;"><img src="http://eecs445-f16.github.io/theme/images/m-logo.png" height="36" title="" style="padding-left:15px;"></a></li>
+	    </ul>
 	  </div>
 	</div>
 </div>
 
 <!-- Content -->
 <div class="container content">
+Syllabus
+
 
 <h1>Introduction to Machine Learning <span class="pull-right"><small>Fall 2016</small></span></h1>
 
@@ -73,19 +70,19 @@
     <tr><th>Prerequisites</th>
         <td><ul class="list-unstyled">
             <p>The only enforced prerequisite is EECS 281.  However, if you are not familiar with at least one of the following topics you <b>will</b> struggle in this course.
-            
+
             <ul>
                 <li>Linear algebra at the level of MATH 419 or MATH 214, but preferrably at the level of MATH 217.</li>
                 <li>Probability at the level of EECS 401, MATH 425, or equivalent.</li>
             </ul></p>
-            
+
             <p>We understand that most EECS students will only ever encounter a proper subset of these topics, so we will be providing a <b>brief</b> review of <span style="color:red">important concepts</span> at the beginning of the semester.  We'll move fast, though, so be warned!</p>
         </ul></td></tr>
     <!-- Textbooks -->
     <tr><th>Textbook</th>
         <td>
         <p>A good textbook is invaluable for self-study.  Although there is no required textbook, we highly recommend purchasing one of the following books for your own use and future reference:</p>
-        
+
         <ul>
             <li>Murphy, Kevin P. <i><a href="https://www.cs.ubc.ca/~murphyk/MLbook/">Machine learning: A Probabilistic Perspective</a></i>. MIT press, 2012.</li>
             <li>Bishop, Christopher M. <i><a href="https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738">Pattern Recognition and Machine Learning</a></i>.  Springer-Verlag New York, Inc., 2006.
@@ -95,7 +92,7 @@
     <tr><th>Lectures</th>
         <td>
             <p>This semester, we will be experimenting with a flipped classroom format.  The later section will be a typical lecture and will be video recorded for online viewing.  The earlier section will be more hands-on, where students will spend most of their time working together in groups to better understand challenging concepts.</p>
-            
+
             <ul class="list-unstyled">
                 <li><b>Section 001 (Hands-on Lecture)</b>  Mon/Wed 4:30-6pm, 1670 BBB</li>
                 <li><b>Section 002 (Standard Lecture)</b>  Mon/Wed 6-7:30pm, Chesebrough Auditorium</li>
@@ -153,16 +150,13 @@
     </tbody></table>
 </div>
 
-</div>
-
-<!-- Scripts -->
-
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/gcal.js"></script>
-<script type='text/javascript'>
+<script type="text/javascript">
 $(document).ready(function() {
   $('#calendar').fullCalendar({
     height: 'auto',
@@ -198,6 +192,11 @@ $(document).ready(function() {
   });
 });
 </script>
+
+
+</div>
+
+<!-- Scripts -->
 
 </body>
 
